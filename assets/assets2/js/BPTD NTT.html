@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://localhost/profilebptd/index.php/administrator/profil_uppkb -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BPTD NTT </title>
+	<!-- font awesome -->
+	<link rel="stylesheet" href="./BPTD NTT_files/font-awesome.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="./BPTD NTT_files/bootstrap.min.css">
+	<!-- datatables -->
+	<!-- jquery -->
+	<script src="./BPTD NTT_files/jquery.min.js.download"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+		<a class="navbar-brand" href="http://localhost/profilebptd/">
+			<img src="./BPTD NTT_files/logo.png" width="200" height="70" alt="logo">
+		<br> <h6> BPTD PROVINSI NTT WILAYAH XIII</h6>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-8" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-center" id="navbar-list-8">
+			<ul class="navbar-nav">
+				<li class="nav-item  ">
+					<a class="nav-link" href="http://localhost/profilebptd/index.php/administrator">
+						<i class="fa fa-home"></i> HOME<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item bg-dark dropdown">
+					<a class="nav-link dropdown-toggle" href="http://localhost/profilebptd/index.php/administrator/visi_misi" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						PROFIL BPTD
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/visi_misi">Profil BPTD</a>
+                        <a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/profil_so">STRUKTUR ORGANISASI</a>
+                        <a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/profil_pa">PETA ADMINISTRASI</a>
+                        <a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/profil_pj">PERLENGKAPAN JALAN</a>
+					</div>
+					
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://localhost/profilebptd/index.php/administrator/profil_uppkb#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						PROFIL PELABUHAN
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/satpel_bolok">SATPEL BOLOK</a>
+						<a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/satpel_lbj">SATPEL LBJ</a>
+						<a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/satpel_alor">SATPEL ALOR</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://localhost/profilebptd/index.php/administrator/profil_uppkb">PROFIL UPPKB</a>
+				</li>
+				
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://localhost/profilebptd/index.php/administrator/profil_uppkb#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					PUBLIKASI
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+												<a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/List_kat/berita">berita </a>
+												<a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/List_kat/artikel">artikel </a>
+												<a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/List_kat/informasi%20publik">informasi publik </a>
+												<a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/List_kat/kegiatan">kegiatan </a>
+												<a class="dropdown-item" href="http://localhost/profilebptd/index.php/administrator/List_kat/uncategorised">uncategorised </a>
+											</div>
+					
+				</li>
+			</ul>
+
+			<div class="right-side d-flex">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="http://localhost/profilebptd/index.php/administrator/profil_uppkb#" data-toggle="modal" data-target="#login">
+							<i class="fa fa-sign-in"></i>
+							login
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+				<form class="form-horizontal" action="http://localhost/profilebptd/index.php/auth/login_action" method="post">
+					<div class="form-group">
+						<label>Username</label>
+						<input name="username" type="username" placeholder="Username" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input name="password" type="password" placeholder="Password" class="form-control">	
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary">login</button>
+				</div>
+				</form>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+	</nav><div class="container">
+	<div class="row justify-content-center mt-4">
+		<div class="col-md-9">
+			<div class="card">
+				<div class="card-body pl-2 pr-2 ">
+                                     <h3> PROFIL UPPKB</h3>
+                    <hr>
+					<img width="803px" height="520px" src="./BPTD NTT_files/Slide11.PNG">
+					<hr>
+					
+					<div class="pr-4 pl-4">
+						<p>Satuan Pelayanan Unit Penimbangan Kendaraan&nbsp; Bermotor Nun Baun Sabu (Satpel UPPKB NBS)&nbsp; sebelumnya bernama Jembatan Timbang Nun Baun&nbsp; Sabu yang di kelola dan dioperasikan oleh Kanwil XIII&nbsp; Departemen Perhubungan di Provinsi NTT sejak Tahun&nbsp; 1973 sampai Tahun 2000 atau sebelum pelaksanaan&nbsp; otonomi daerah. Setelah diterbitkannya Undang –&nbsp; Undang Otonomi Daerah dan Perda Gubernur Provinsi&nbsp; NTT pada Tahun 2000, maka pengelolaan dan&nbsp; pengoperasian Jembatan Timbang Nun Baun Sabu&nbsp; diserahkan sepenuhnya untuk dikelolah oleh Dinas&nbsp; Perhubungan Provinsi Nusa Tenggara Timur,&nbsp; pengelolaan dan pengoperasian Jembatan Timbang Nun&nbsp; Baun Sabu di bawah Dinas Perhubungan dilaksanakan&nbsp; oleh Unit Pelaksana Teknis Perijinan dan Pengawasan&nbsp; Lalu Lintas Angkutan Jalan Wilayah Kabupaten&nbsp; Kupang, Kota Kupang, Rote Ndao, dan TTS.</p>
+
+<p>Kemudian setelah beberapa kali mengalami perubahan, maka&nbsp; sesuai amanat Undang - Undang Nomor 23 Tahun 2014 tentang&nbsp; Pemerintahan Daerah, dan Surat Edaran Menteri Dalam Negeri&nbsp; Nomor : 120/5935/SJ Tanggal 16 Oktober 2015 tentang Percepatan&nbsp; Pelaksanaan Pengalihan Urusan Berdasarkan Undang - Undang&nbsp; Nomor 23 Tahun 2014 tentang Pemerintahan Daerah, maka&nbsp; dilakukan penyerahan pelimpahan kewenangan Personel,&nbsp; Pendanaan, Sarana dan Prasarana serta Dokumen (P3D) Jembatan&nbsp; Timbang Dari Pemerintah Daerah kepada Pemerintah Pusat dalam&nbsp; hal ini Kementerian Perhubungan republik Indonesia, dan melalui&nbsp; Surat Keputusan Menteri Perhubungan PM. 154 Tahun 2016&nbsp; tentang Organisasi dan tata kerja Balai Pengelola Transportasi&nbsp; Darat sebagaimana terakhir diubah dengan PM No. 20 tahun 2018,&nbsp; pegoperasian Jembatan Timbang dilaksanakan oleh Unit&nbsp; Penimbangan Kendaraan Bermotor dibawah Balai Pengelola&nbsp; Transportasi Darat, sehingga secara resmi Jembatan Tiimbang Nun&nbsp; Baun Sabu berubah Nama menjadi Satuan Pelayanan Unit&nbsp; Penimbangan Kendaraan Bermotor Nun Baun Sabu yang&nbsp; merupakan unit teknis dari Balai Pengelola Transportasi darat&nbsp; Wilaya XIII Provinsi Nusa Tenggara Timur.</p>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+</div><footer>
+	<nav class="navbar navbar-dark bg-dark "> 
+        <div class="col-md-6">
+
+            <div class="col-md-10 text-white text-center"> 
+                <h5>LOKASI KANTOR</h5>
+                <iframe src="./BPTD NTT_files/embed.html" width="400" height="200" frameborder="" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <div class="col-md-3">
+			<div class="list-group text-white ">
+            <h5 class="widgetheading">INFORMASI KONTAK</h5>
+                <address>
+                    <strong>BPTD WIL XIII PROV. NTT</strong>
+                    <br>Jl. WR. Monginsidi No. 
+                    <br>Kupang - Nusa Tenggara Timur
+                    <br>KUPANG 85228 Indonesia
+			    </address>
+              <p>
+                <i class="fa fa-phone"></i> 0380 -  8439555<br>
+                <i class="fa fa-envelope"></i> bptd13.ntt@gmail.com<br>
+                <a href="http://www.dephub.go.id/" class="text-white text-decoration-none"><i class="fa fa-globe "></i> www.dephub.go.id</a>
+              </p>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="list-group text-white ">
+				<h5 class="widgetheading">INFORMASI KONTAK </h5>
+				<address>
+					<strong>SATPEL UPPKB NUN BAUN SABU</strong>
+					<br>Jl. Pahlawan KM. 3 Nun Baun Sabu
+					<br>Kupang - Nusa Tenggara Timur
+					<br>KUPANG 85228 Indonesia
+				</address>
+				<p>
+					<i class="fa fa-phone" aria-hidden="true"></i> 0380 - 8439555<br>
+					<i class="fa fa-envelope" aria-hidden="true"></i> bptd13.ntt@gmail.com<br>
+					<a href="http://www.dephub.go.id/" class="text-white text-decoration-none"><i class="fa fa-globe "></i> www.dephub.go.id</a>
+				</p>
+			</div>
+        </div>
+	</nav>
+</footer>
+<script src="./BPTD NTT_files/bootstrap.min.js.download"></script>
+
+</body></html>
