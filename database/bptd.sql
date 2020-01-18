@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2020 at 05:23 PM
+-- Generation Time: Jan 18, 2020 at 06:19 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.19
 
@@ -228,8 +228,6 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`id_user`, `nama`, `username`, `password`, `level`) VALUES
-(3, 'yoel', 'yoelnalle', 'c3a92a87c0e7f0b63b993e5cfbce5997f1121c9c', 1),
-(4, 'adimas', 'adimas', '923345ecd1a47e4f67dba70655d4d096b5e72690', 1),
 (5, 'admin', 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 1);
 
 -- --------------------------------------------------------
